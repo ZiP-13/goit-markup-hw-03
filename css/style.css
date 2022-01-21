@@ -1,7 +1,17 @@
 /* main-color #757575 */
 /* secondary-color #212121 */
 /* accent-color #2196F3 */
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -11,7 +21,7 @@
   --team-section-background: #f5f4fa;
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -20,12 +30,21 @@ body {
   color: var(--primary-text-color);
 }
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
-
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 /* ===== header ====== */
+
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.1;
@@ -33,7 +52,7 @@ body {
   color: var(--title-text-color);
 }
 .logo-accent {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.1;
@@ -77,6 +96,8 @@ body {
   background-color: var(--secondary-background);
 }
 .hero_title {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.3;
@@ -87,22 +108,32 @@ body {
 /* ====end section hero ====*/
 /* ===sections studio ===*/
 .features,
-.projects {
+.projects /*in portfolio*/ {
   display: none;
+}
+.features_title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  line-height: 1.1;
   text-transform: uppercase;
+  color: var(--title-text-color);
+}
+.section-features,
+.section-projects, /* in portfolio*/ 
+.section-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section-work {
+  padding-bottom: 94px;
 }
 .work,
 .team {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
   text-align: center;
-  color: var(--title-text-color);
-}
-.features_title {
-  font-weight: 700;
-  line-height: 1.1;
-  text-transform: uppercase;
   color: var(--title-text-color);
 }
 .section-team {
@@ -126,7 +157,7 @@ body {
   background-color: var(--secondary-background);
 }
 .logo-footer {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.1;
@@ -169,7 +200,10 @@ body {
 /* ======button ========*/
 .button_primary {
   border: 0;
-  font-family: 'Roboto', sans-serif;
+  padding: 10px 32px;
+  min-width: 136px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
@@ -182,7 +216,7 @@ body {
 .button_secondary,
 .button_current {
   border: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
