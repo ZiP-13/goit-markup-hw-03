@@ -120,12 +120,13 @@ body {
 }
 .section-features,
 .section-projects, /* in portfolio*/ 
+.section-work,
 .section-team {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.section-work {
-  padding-bottom: 94px;
+.no-padding {
+  padding-top: 0;
 }
 .work,
 .team {
