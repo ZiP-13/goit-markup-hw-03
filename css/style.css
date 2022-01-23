@@ -262,11 +262,11 @@ body {
 }
 .address-map:hover,
 .address-map:focus {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--accent-hover);
 }
 .address-contact:hover,
 .address-contact:focus {
-  color: var(--primary-white-color);
+  color: var(--accent-hover);
 }
 /* ========end footer===== */
 /* =======portfolio section======= */
@@ -341,11 +341,13 @@ body {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
-.button_primary:hover {
+.button_primary:hover,
+.button_primary:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-hover);
 }
-.button_secondary:hover {
+.button_secondary:hover,
+.button_secondary:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
