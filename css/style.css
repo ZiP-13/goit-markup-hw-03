@@ -6,6 +6,7 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
+  --accent-hover: #188ce8;
   --primary-white-color: #ffffff;
   --secondary-background: #2f303a;
   --team-section-background: #f5f4fa;
@@ -336,6 +337,10 @@ body {
 .button_current {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+}
+.button_primary:hover {
+  color: var(--primary-white-color);
+  background-color: var(--accent-hover);
 }
 .button_secondary:hover {
   color: var(--primary-white-color);
