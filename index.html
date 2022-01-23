@@ -15,22 +15,32 @@
 
   <body>
     <!--top line-->
-    <header class="page-header">
-      <div class="container">
-        <nav>
+    <header class="header">
+      <div class="container header-wrap">
+        <nav class="nav">
         <!--retur to main paig-->
         <a href="./index.html" class="logo"><span class="logo-accent">Web</span>Studio</a>
         <!--nav-->
         <ul class="site-nav list">
-          <li><a href="./index.html" class="current">Студия</a></li>
-          <li><a class="top_link" href="./portfolio.html">Портфолио</a></li>
-          <li><a class="top_link" href="">Контакты</a></li>
+          <li class="top-item">
+            <a class="top_link current" href="./index.html">Студия</a>
+          </li>
+          <li class="top-item">
+            <a class="top_link" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="top-item">
+            <a class="top_link" href="">Контакты</a>
+          </li>
         </ul>
       </nav>
       <!--contacts-->
       <ul class="top-contacts list">
-        <li><a class="top_contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="top_contact" href="telto:+380961111111">+38 096 111 11 11</a></li>
+        <li class="contact-item">
+          <a class="top_contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+        <li class="contact-item">
+          <a class="top_contact" href="telto:+380961111111">+38 096 111 11 11</a>
+        </li>
       </ul>
     </div>
     </header>
@@ -38,33 +48,33 @@
     <main>
       <!--section 1-->
       <section class="hero">
-        <h1 class="hero_title">Эффективные решения для вашего бизнеса</h1>
+        <h1 class="hero_title">Эффективные решения </br>для вашего бизнеса</h1>
         <button class="button_primary">Заказать услугу</button>
       </section>
 
       <!--section 2-->
       <section class="section-features">
-      <div class="container">
+      <div class="container top-padding">
           <!--title "Особенности" need to hide whit styles CSS-->
           <h2 class="features">Особенности</h2>
-          <ul class="list">
-            <li>
+          <ul class="features-list list">
+            <li class="features-item">
               <h3 class="features_title">Внимание к деталям</h3>
               <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
             </li>
-            <li>
+            <li class="features-item">
               <h3 class="features_title">Пунктуальность</h3>
               <p>
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li>
+            <li class="features-item">
               <h3 class="features_title">Планирование</h3>
               <p>
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li>
+            <li class="features-item">
               <h3 class="features_title">Современные технологии</h3>
               <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
@@ -76,14 +86,14 @@
       <section class="section-work no-padding">
       <div class="container">
         <h2 class="work">Чем мы занимаемся</h2>
-        <ul class="list">
-          <li>
+        <ul class="work-list list">
+          <li class="work-item">
             <img src="img/index/section_3/section3-1.jpg" alt="Планирование работы" width="370" height="294" />
           </li>
-          <li>
+          <li class="work-item">
             <img src="img/index/section_3/section3-2.jpg" alt="Работа с уведомлениями" width="370" height="294" />
           </li>
-          <li>
+          <li class="work-item">
             <img src="img/index/section_3/section3-3.jpg" alt="Оптимизация рабочего графика" width="370" height="294" />
           </li>
         </ul>
@@ -94,26 +104,34 @@
       <section class="section-team">
         <div class="container">
           <h2 class="team">Наша команда</h2>
-          <ul class="list">
+          <ul class="team-list list">
             <li>
-              <img src="img/index/section_4/section4-1.jpg" alt="Работник компании" width="270" height="260" />
+              <img class="team-img" src="img/index/section_4/section4-1.jpg" alt="Работник компании" width="270" height="260" />
+              <div class="team-content">
               <h3 class="team_name">Игорь Демьяненко</h3>
               <p lang="en" class="team_prof">Product Designer</p>
+              </div>
             </li>
             <li>
-              <img src="img/index/section_4/section4-2.jpg" alt="Работник компании" width="270" height="260" />
+              <img class="team-img" src="img/index/section_4/section4-2.jpg" alt="Работник компании" width="270" height="260" />
+              <div class="team-content">
               <h3 class="team_name">Ольга Репина</h3>
               <p lang="en" class="team_prof">Frontend Developer</p>
+              </div>
             </li>
             <li>
-              <img src="img/index/section_4/sectoin4-3.jpg" alt="Работник компании" width="270" height="260" />
+              <img class="team-img" src="img/index/section_4/sectoin4-3.jpg" alt="Работник компании" width="270" height="260" />
+              <div class="team-content">
               <h3 class="team_name">Николай Тарасов</h3>
               <p lang="en" class="team_prof">Marketing</p>
+              </div>
             </li>
             <li>
-              <img src="img/index/section_4/section4-4.jpg" alt="Работник компании" width="270" height="260" />
+              <img class="team-img" src="img/index/section_4/section4-4.jpg" alt="Работник компании" width="270" height="260" />
+              <div class="team-content">
               <h3 class="team_name">Михаил Ермаков</h3>
               <p lang="en" class="team_prof">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -129,8 +147,8 @@
               <a href="https://goo.gl/maps/jYwfcW3zjosPF1Vx7" target="_blank" rel="noopener noreferrer" class="address-map">г.
                 Киев, пр-т Леси Украинки, 26</a>
             </li>
-            <li><a href="mailto:info@example.com" class="address-m_t">info@example.com</a></li>
-            <li><a href="telto:+380991111111" class="address-m_t">+38 099 111 11 11</a></li>
+            <li><a href="mailto:info@example.com" class="address-contact">info@example.com</a></li>
+            <li><a href="telto:+380991111111" class="address-contact">+38 099 111 11 11</a></li>
           </ul>
         </address>
       </div>
