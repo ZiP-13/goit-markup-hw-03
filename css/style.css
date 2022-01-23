@@ -9,6 +9,9 @@
   --primary-white-color: #ffffff;
   --secondary-background: #2f303a;
   --team-section-background: #f5f4fa;
+  --top-border: #ececec;
+  --bottom-border: #eeeeee;
+  --card-gap: 30px;
 }
 h1,
 h2,
@@ -46,14 +49,12 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  /* padding-top: 94px;
-  padding-bottom: 94px; */
-  outline: 2px solid red;
 }
 /* ===== Header ====== */
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
+  border-bottom: 1px solid var(--top-border);
 }
 .header-wrap {
   display: flex;
@@ -142,7 +143,7 @@ body {
 /* ===sections studio ===*/
 /* features */
 .features,
-.projects /*in portfolio*/ {
+.filter /*in portfolio*/ {
   display: none;
 }
 .features-list {
@@ -162,12 +163,11 @@ body {
   color: var(--title-text-color);
 }
 .section-features,
-.section-projects, /* in portfolio*/ 
+.section-filter, /* in portfolio*/ 
 .section-work,
 .section-team {
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: turquoise;
 }
 .no-padding {
   padding-top: 0;
@@ -190,13 +190,24 @@ body {
 }
 /* Team */
 .section-team {
-  background-color: tomato;
+  background-color: var(--team-section-background);
 }
 .team-list {
   display: flex;
+  margin-left: calc(-1 * var(--card-gap));
+}
+.team-item {
+  flex-basis: calc(100% / 4 - var(--card-gap));
+  margin-left: var(--card-gap);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-content {
+  max-width: 270px;
   padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: var(--primary-white-color);
 }
 .team_name {
   font-weight: 500;
@@ -219,6 +230,7 @@ body {
   padding-bottom: 60px;
 }
 .logo-footer {
+  display: flex;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -226,6 +238,10 @@ body {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--primary-white-color);
+  margin-bottom: 20px;
+}
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .address-map {
   font-style: normal;
@@ -247,12 +263,40 @@ body {
 }
 /* ========end footer===== */
 /* =======portfolio section======= */
+.filter-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.filter-item + .filter-item {
+  margin-left: 8px;
+}
+.project-list {
+  display: flex;
+  margin-left: calc(-1 * var(--card-gap));
+  margin-top: calc(-1 * var(--card-gap));
+  flex-wrap: wrap;
+}
+.project-item {
+  width: calc(100% / 3 - var(--card-gap));
+  margin-left: var(--card-gap);
+  margin-top: var(--card-gap);
+}
+.project-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  border-left: 1px solid var(--bottom-border);
+  border-right: 1px solid var(--bottom-border);
+  border-bottom: 1px solid var(--bottom-border);
+}
 .project_name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
+  margin-bottom: 4px;
 }
 .project_about {
   font-size: 16px;
@@ -277,6 +321,7 @@ body {
 .button_secondary,
 .button_current {
   border: 0;
+  padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -292,7 +337,7 @@ body {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
-.button_current {
+.button_secondary:hover {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
